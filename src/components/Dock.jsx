@@ -1,4 +1,5 @@
 import { dockApps } from '#constants'
+import useWindowStore from '#store/window'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useRef } from 'react'
@@ -6,7 +7,8 @@ import { Tooltip } from 'react-tooltip'
 
 
 const Dock = () => {
-  const dockRef = useRef()
+  const dockRef = useRef();
+  const {openWindow, closeWindow, windows} = useWindowStore();
   useGSAP(() => {
     const dock = dockRef.current;
     if (!dock) return;
@@ -51,7 +53,21 @@ const Dock = () => {
     }
   }, [])
 
-  function toggleApp(app) { }
+  function toggleApp(app) { 
+    if(!app.canOpen) return;
+
+    const window= windows[app.id]; 
+    if(!window){
+      console.error(`Window not found for app: ${app.id}`);
+      return
+    }
+
+    if(window.isOpen){
+      closeWindow(app.id)
+    }else{
+      openWindow(app.id)
+    }
+  }
   return (
     <section id='dock'>
       <div ref={dockRef} className="dock-container">
