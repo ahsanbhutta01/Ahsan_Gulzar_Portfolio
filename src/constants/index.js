@@ -128,28 +128,21 @@ const socials = [
       text: "Github",
       icon: "/icons/github.svg",
       bg: "#f4656b",
-      link: "https://github.com/JavaScript-Mastery-Pro",
+      link: "https://github.com/ahsanbhutta01",
    },
    {
       id: 2,
-      text: "Platform",
-      icon: "/icons/atom.svg",
-      bg: "#4bcb63",
-      link: "https://jsmastery.com/",
-   },
-   {
-      id: 3,
       text: "Twitter/X",
       icon: "/icons/twitter.svg",
       bg: "#ff866b",
-      link: "https://x.com/jsmasterypro",
+      link: "https://x.com/ahsangulzar009?t=lp1n1SHherHwipGgs2dIkw&s=09",
    },
    {
-      id: 4,
+      id: 3,
       text: "LinkedIn",
       icon: "/icons/linkedin.svg",
       bg: "#05b6f6",
-      link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+      link: "https://www.linkedin.com/in/ahsan-gulzar-565418243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
    },
 ];
 
@@ -184,19 +177,23 @@ const photosLinks = [
 const gallery = [
    {
       id: 1,
-      img: "/images/gal1.png",
+      img: "/images/ahsan_2.jpeg",
    },
    {
       id: 2,
-      img: "/images/gal2.png",
+      img: "/images/ahsan_4.jpeg ",
    },
    {
       id: 3,
-      img: "/images/gal3.png",
+      img: "/images/ahsan_3.jpeg",
    },
    {
       id: 4,
-      img: "/images/gal4.png",
+      img: "/images/ahsan_5.jpeg ",
+   },
+   {
+      id: 5,
+      img: "/images/ahsan.jpg",
    },
 ];
 
@@ -221,52 +218,57 @@ const WORK_LOCATION = {
       // ▶ Project 1
       {
          id: 5,
-         name: "Nike Ecommerce Website Application",
+         name: "E-commerce Website",
          icon: "/images/folder.png",
          kind: "folder",
          position: "top-10 left-5", // icon position inside Finder
-         windowPosition: "top-[5vh] left-5", // optional: Finder window position
+         windowPosition: "top-[7vh] left-50", // optional: Finder window position
          children: [
             {
                id: 1,
-               name: "Nike Project.txt",
+               name: "B. E-commerce.txt",
                icon: "/images/txt.png",
                kind: "file",
                fileType: "txt",
                position: "top-5 left-10",
                description: [
-                  "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                  "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                  "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                  "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                  ` 🚀<strong style="font-weight: bold; font-size: 1.2rem;">A fully Functional E‑Commerce Website built with the MERN Stack! </strong></br></br/>
+
+                           <strong style="font-weight: bold; font-size: 1.2rem;">———Key Highlights & Features——— </strong></br>
+               ✅ Frontend: React + Tailwind CSS for a responsive, mobile‑first UI.</br>
+               ✅ State Management: Redux Toolkit with Thunk for smooth async data flow.</br>
+               ✅ Backend/API: Node.js + Express powering RESTful endpoints.</br>
+               ✅ Database: MongoDB via Mongoose for flexible product & user schemas.</br>
+               ✅ Authentication: JWT‑based login & role‑based authorization with cookies.</br>
+               ✅ Image Uploads: Integrated Cloudinary API for secure, on‑the‑fly image hosting.</br>
+               ✅ Payments: PayPal payment gateway for seamless checkout experiences.</br>
+               ✅ Deployment: Frontend and Backend hosted on Vercel.</br></br>
+
+                           <strong style="font-weight: bold; font-size: 1.2rem;">————What I Learned?————</strong></br>
+               ✔️ Structuring scalable Redux slices and async thunks.</br>
+               ✔️ Designing secure auth flows with JWT and protected routes.</br>
+               ✔️ Handling file uploads and environment variables.</br>
+               ✔️ Integrating third‑party services (Cloudinary, PayPal).</br>
+               ✔️ CI/CD basics for rapid deployment with Vercel </br>`
                ],
             },
             {
                id: 2,
-               name: "nike.com",
+               name: "B. E-commerce.com",
                icon: "/images/safari.png",
                kind: "file",
                fileType: "url",
-               href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+               href: "https://b-ecommerce-xu3h.vercel.app/",
                position: "top-10 right-20",
             },
             {
                id: 4,
-               name: "nike.png",
+               name: "B. E-commerce.png",
                icon: "/images/image.png",
                kind: "file",
                fileType: "img",
                position: "top-52 right-80",
                imageUrl: "/images/project-1.png",
-            },
-            {
-               id: 5,
-               name: "Design.fig",
-               icon: "/images/plain.png",
-               kind: "file",
-               fileType: "fig",
-               href: "https://google.com",
-               position: "top-60 right-20",
             },
          ],
       },
@@ -274,106 +276,117 @@ const WORK_LOCATION = {
       // ▶ Project 2
       {
          id: 6,
-         name: "AI Resume Analyzer",
+         name: "B-Docs (Real-time Collaborative Document)",
          icon: "/images/folder.png",
          kind: "folder",
          position: "top-52 right-80",
-         windowPosition: "top-[20vh] left-7",
+         windowPosition: "top-[18vh] left-0 -right-150",
          children: [
             {
                id: 1,
-               name: "AI Resume Analyzer Project.txt",
+               name: "B-Docs.txt",
                icon: "/images/txt.png",
                kind: "file",
                fileType: "txt",
                position: "top-5 right-10",
                description: [
-                  "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                  "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                  "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                  "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                  `  <strong style="font-weight: bold; font-size: 1.2rem;">
+                        —Real-time Google Docs clone (from scratch)—
+                     </strong></br>
+            I built a collaborative document editor that feels like Google Docs — but custom.Fast demo, real-time cursors, comments, templates, exports, and full auth & organization (a team/workspace) support </br></br>
+
+                     <strong style="font-weight: bold; font-size: 1.2rem;">——What it does (highlights)——</strong></br>
+            ✍️ Rich editor — TipTap with custom extensions (lists, tables, exports).</br>
+            🤝 Real-time collaboration — concurrent editing, presence & cursor tracking.</br>
+            💬 Comments & threads — mentions, threaded replies, and notifications.</br>
+            📦 Productivity features — templates, copy/paste formatting, undo/redo, exports (PDF/HTML/TXT/JSON).</br>
+            🖼️ Media — image uploads and inline embeds.</br>
+            🔒 Teams & auth — org workspaces, invites, and Clerk authentication.</br>
+            -Built to ship — Next.js 15, Tailwind + shadcn UI, deploys on Vercel.</br></br>
+
+                     <strong style="font-weight: bold; font-size: 1.2rem;">——Tech stack——</strong></br>
+            TipTap · Liveblocks · Convex · Clerk · Next.js 15 · TailwindCSS · Vercel</br></br>
+
+         <strong style="font-weight: bold; font-size: 1.2rem;">——Why I built it?——</strong></br>
+            -To learn how real-time syncing and conflict resolution work in production.</br>
+            -To combine a modern editor (TipTap) with reliable realtime (Liveblocks) and persistence (Convex).</br>
+            -To ship a complete UX — comments, exports, templates, and organization-level auth.</br>
+                  `,
                ],
             },
             {
                id: 2,
-               name: "ai-resume-analyzer.com",
+               name: "B-Docs.com",
                icon: "/images/safari.png",
                kind: "file",
                fileType: "url",
-               href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+               href: "https://b-docx.vercel.app/",
                position: "top-20 left-20",
             },
             {
                id: 4,
-               name: "ai-resume-analyzer.png",
+               name: "D-Docs.png",
                icon: "/images/image.png",
                kind: "file",
                fileType: "img",
                position: "top-52 left-80",
                imageUrl: "/images/project-2.png",
-            },
-            {
-               id: 5,
-               name: "Design.fig",
-               icon: "/images/plain.png",
-               kind: "file",
-               fileType: "fig",
-               href: "https://google.com",
-               position: "top-60 left-5",
-            },
+            }
          ],
       },
 
       // ▶ Project 3
       {
          id: 7,
-         name: "Food Delivery App",
+         name: "Companies Review System",
          icon: "/images/folder.png",
          kind: "folder",
          position: "top-10 left-80",
-         windowPosition: "top-[33vh] left-7",
+         windowPosition: "top-[33vh] left-20",
          children: [
             {
                id: 1,
-               name: "Food Delivery App Project.txt",
+               name: "Companies Review System.txt",
                icon: "/images/txt.png",
                kind: "file",
                fileType: "txt",
                position: "top-5 left-10",
                description: [
-                  "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                  "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                  "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                  "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                  `<strong style="font-weight: bold; font-size: 1.2rem;">💼 Company Reviews System | Full-Stack MERN + Next.js 15 Project</strong></br>
+
+                     I developed a fully functional Company Reviews Platform using the MERN stack with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui — a modern web app where users can post, view, and rate company reviews in real-time.</br></br>
+
+                              <strong style="font-weight: bold; font-size: 1.2rem;">⚙️ Tech Highlights:</strong>
+                                 </br>
+                     -Next.js 15 + TypeScript for a fast, dynamic, and SEO-friendly frontend.</br>
+                     -Node.js, Express & MongoDB (Mongoose) for a secure and scalable backend.</br>
+                     -RESTful APIs for smooth data communication.</br>
+                     -Modern UI built with Tailwind CSS & shadcn/ui components.</br>
+                     -Fully responsive design with clean routing and state management.</br>
+                     -Deployed full-stack app ready for production.</br></br>
+
+                              💡<strong style="font-weight: bold; font-size: 1.2rem;">What This Project Showcases:</strong></br>
+                     A perfect example of my expertise in Next.js, Express.js, MongoDB, Node.js, and TypeScript — combining performance, design, and functionality into one professional web solution.</br>`,
                ],
             },
             {
                id: 2,
-               name: "food-delivery-app.com",
+               name: "Company_Reviews_System.com",
                icon: "/images/safari.png",
                kind: "file",
                fileType: "url",
-               href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+               href: "https://companies-review-system.vercel.app/",
                position: "top-10 right-20",
             },
             {
                id: 4,
-               name: "food-delivery-app.png",
+               name: "Company_Reviews_System.png",
                icon: "/images/image.png",
                kind: "file",
                fileType: "img",
                position: "top-52 right-80",
                imageUrl: "/images/project-3.png",
-            },
-            {
-               id: 5,
-               name: "Design.fig",
-               icon: "/images/plain.png",
-               kind: "file",
-               fileType: "fig",
-               href: "https://google.com",
-               position: "top-60 right-20",
-            },
+            }
          ],
       },
    ],

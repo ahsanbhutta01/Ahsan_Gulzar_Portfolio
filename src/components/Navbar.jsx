@@ -4,8 +4,20 @@ import React from 'react'
 import useWindowStore from '#store/window'
 
 const Navbar = () => {
-  const {openWindow} = useWindowStore();
+  const { openWindow, closeWindow, windows } = useWindowStore();
 
+  function toggleWindow(windowType) {
+    const window = windows[windowType];
+    if (!window) {
+      console.error(`Window not for found for type: ${windowType}`)
+    }
+
+    if (window.isOpen) {
+      closeWindow(windowType)
+    } else {
+      openWindow(windowType)
+    }
+  }
 
   return (
     <nav>
@@ -16,7 +28,7 @@ const Navbar = () => {
         <ul>
           {
             navLinks.map(({ id, name, type }) => (
-              <li key={id} onClick={()=>openWindow(type)}>
+              <li key={id} onClick={() => toggleWindow(type)}>
                 <p>{name}</p>
               </li>
             ))
